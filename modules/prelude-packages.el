@@ -37,7 +37,7 @@
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
-
+(setq url-http-attempt-keepalives nil)
 (defvar prelude-packages
   '(ack-and-a-half auctex clojure-mode coffee-mode deft expand-region
                    gist groovy-mode haml-mode haskell-mode inf-ruby
